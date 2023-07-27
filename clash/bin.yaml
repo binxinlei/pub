@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-07-27 17:38:46
+# 创建时间：2023-07-27 17:41:48
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：13
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,6 +22,10 @@ dns:
     - tls://dns.google:853
 
 proxies:
+  - {"name":"jp.binxinlei.link","type":"vless","server":"146.56.40.191","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"jp.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.link"}},"client-fingerprint":"randomized"}
+  - {"name":"sg.binxinlei.link","type":"vless","server":"54.169.202.215","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"sg.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.link"}},"client-fingerprint":"randomized"}
+  - {"name":"sk.binxinlei.link","type":"vless","server":"130.162.154.209","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"sk.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sk.binxinlei.link"}},"client-fingerprint":"randomized"}
+  - {"name":"kr.binxinlei.link","type":"vless","server":"129.154.194.61","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"kr1.binxinlei.link","type":"vless","server":"146.56.157.137","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr1.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr1.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"tw.binxinlei.link","type":"vless","server":"220.130.80.179","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tw.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tw.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"tr.binxinlei.link","type":"vless","server":"91.151.89.81","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tr.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tr.binxinlei.link"}},"client-fingerprint":"randomized"}
@@ -37,6 +41,10 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - jp.binxinlei.link
+      - sg.binxinlei.link
+      - sk.binxinlei.link
+      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
@@ -52,6 +60,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - jp.binxinlei.link
+      - sg.binxinlei.link
+      - sk.binxinlei.link
+      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
@@ -67,6 +79,10 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - jp.binxinlei.link
+      - sg.binxinlei.link
+      - sk.binxinlei.link
+      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
@@ -81,6 +97,10 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - jp.binxinlei.link
+      - sg.binxinlei.link
+      - sk.binxinlei.link
+      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
@@ -95,6 +115,10 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - jp.binxinlei.link
+      - sg.binxinlei.link
+      - sk.binxinlei.link
+      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
@@ -109,6 +133,10 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - jp.binxinlei.link
+      - sg.binxinlei.link
+      - sk.binxinlei.link
+      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
@@ -140,6 +168,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - jp.binxinlei.link
+      - sg.binxinlei.link
+      - sk.binxinlei.link
+      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
