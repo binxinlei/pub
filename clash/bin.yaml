@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-07-27 15:48:36
+# 创建时间：2023-07-27 17:38:46
 # 使用模版：V2RaySE 默认模版
 # 节点数量：9
 ####################################
@@ -22,102 +22,102 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"jp.binxinlei.link","type":"vless","server":"146.56.40.191","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"jp.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"sg.binxinlei.link","type":"vless","server":"54.169.202.215","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"sg.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"sk.binxinlei.link","type":"vless","server":"130.162.154.209","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"sk.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sk.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"kr.binxinlei.link","type":"vless","server":"129.154.194.61","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"kr1.binxinlei.link","type":"vless","server":"146.56.157.137","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr1.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr1.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"tw.binxinlei.link","type":"vless","server":"220.130.80.179","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tw.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tw.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"tr.binxinlei.link","type":"vless","server":"91.151.89.81","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tr.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tr.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"ba4-vless","type":"vless","server":"v2-binxinlei.b4a.run","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
   - {"name":"b4a-vmss","type":"vmess","server":"v2-binxinlei.b4a.run","port":443,"cipher":"auto","uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vmess"}}
+  - {"name":"render-us","type":"vless","server":"us-dqvz.onrender.com","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"us-dqvz.onrender.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"us-dqvz.onrender.com"}},"client-fingerprint":"randomized"}
+  - {"name":"render-sg","type":"vless","server":"sg-dmqc.onrender.com","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"sg-dmqc.onrender.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"sg-dmqc.onrender.com"}},"client-fingerprint":"randomized"}
+  - {"name":"render-use","type":"vless","server":"use-6z8p.onrender.com","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"use-6z8p.onrender.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"use-6z8p.onrender.com"}},"client-fingerprint":"randomized"}
+  - {"name":"render-eu","type":"vless","server":"eu-nhai.onrender.com","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"eu-nhai.onrender.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"eu-nhai.onrender.com"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - jp.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
       - ba4-vless
       - b4a-vmss
+      - render-us
+      - render-sg
+      - render-use
+      - render-eu
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - jp.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
       - ba4-vless
       - b4a-vmss
+      - render-us
+      - render-sg
+      - render-use
+      - render-eu
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - jp.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
       - ba4-vless
       - b4a-vmss
+      - render-us
+      - render-sg
+      - render-use
+      - render-eu
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - jp.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
       - ba4-vless
       - b4a-vmss
+      - render-us
+      - render-sg
+      - render-use
+      - render-eu
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - jp.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
       - ba4-vless
       - b4a-vmss
+      - render-us
+      - render-sg
+      - render-use
+      - render-eu
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - jp.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
       - ba4-vless
       - b4a-vmss
+      - render-us
+      - render-sg
+      - render-use
+      - render-eu
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,15 +140,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - jp.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
       - ba4-vless
       - b4a-vmss
+      - render-us
+      - render-sg
+      - render-use
+      - render-eu
 
 rules:
 # 本地/局域网地址
