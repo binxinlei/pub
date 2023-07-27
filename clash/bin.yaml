@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-07-26 11:21:11
+# 创建时间：2023-07-27 15:48:36
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：9
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -29,6 +29,8 @@ proxies:
   - {"name":"kr1.binxinlei.link","type":"vless","server":"146.56.157.137","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr1.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr1.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"tw.binxinlei.link","type":"vless","server":"220.130.80.179","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tw.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tw.binxinlei.link"}},"client-fingerprint":"randomized"}
   - {"name":"tr.binxinlei.link","type":"vless","server":"91.151.89.81","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tr.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tr.binxinlei.link"}},"client-fingerprint":"randomized"}
+  - {"name":"ba4-vless","type":"vless","server":"v2-binxinlei.b4a.run","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"network":"ws","ws-opts":{"path":"/vless"}}
+  - {"name":"b4a-vmss","type":"vmess","server":"v2-binxinlei.b4a.run","port":443,"cipher":"auto","uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vmess"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -42,6 +44,8 @@ proxy-groups:
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
+      - ba4-vless
+      - b4a-vmss
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -55,6 +59,8 @@ proxy-groups:
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
+      - ba4-vless
+      - b4a-vmss
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -68,6 +74,8 @@ proxy-groups:
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
+      - ba4-vless
+      - b4a-vmss
   - name: 📲 电报信息
     type: select
     proxies:
@@ -80,6 +88,8 @@ proxy-groups:
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
+      - ba4-vless
+      - b4a-vmss
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -92,6 +102,8 @@ proxy-groups:
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
+      - ba4-vless
+      - b4a-vmss
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -104,6 +116,8 @@ proxy-groups:
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
+      - ba4-vless
+      - b4a-vmss
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -133,6 +147,8 @@ proxy-groups:
       - kr1.binxinlei.link
       - tw.binxinlei.link
       - tr.binxinlei.link
+      - ba4-vless
+      - b4a-vmss
 
 rules:
 # 本地/局域网地址
