@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-01-16 10:21:32
+# 创建时间：2024-01-16 12:33:56
 # 使用模版：V2RaySE 默认模版
-# 节点数量：1
+# 节点数量：4
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -86,46 +86,67 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"jp.binxinlei.link","type":"vless","server":"1.binxinlei.eu.org","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"jp.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.link"}},"client-fingerprint":"randomized"}
+  - {"name":"jp.binxinlei.workers.dev","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"jp.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"hk.binxinlei.workers.dev","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"hk.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"sg.binxinlei.workers.dev","type":"vless","server":"4.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"sg.binxinlei.workers.dev-clone","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - jp.binxinlei.link
+      - jp.binxinlei.workers.dev
+      - hk.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev-clone
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - jp.binxinlei.link
+      - jp.binxinlei.workers.dev
+      - hk.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev-clone
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - jp.binxinlei.link
+      - jp.binxinlei.workers.dev
+      - hk.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev-clone
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - jp.binxinlei.link
+      - jp.binxinlei.workers.dev
+      - hk.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev-clone
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - jp.binxinlei.link
+      - jp.binxinlei.workers.dev
+      - hk.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev-clone
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - jp.binxinlei.link
+      - jp.binxinlei.workers.dev
+      - hk.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev-clone
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,7 +169,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - jp.binxinlei.link
+      - jp.binxinlei.workers.dev
+      - hk.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev
+      - sg.binxinlei.workers.dev-clone
 
 rules:
 # 本地/局域网地址
