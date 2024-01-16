@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-08-14 09:59:07
+# 创建时间：2024-01-16 10:21:32
 # 使用模版：V2RaySE 默认模版
-# 节点数量：11
+# 节点数量：1
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -12,27 +12,81 @@ log-level: info
 external-controller: 0.0.0.0:9090
 dns:
   enabled: true
-  nameserver:
-    - 119.29.29.29
+  listen: 0.0.0.0:1053
+  ipv6: true
+  default-nameserver:
     - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - 114.114.114.114
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
+    - localhost.ptlogin2.qq.com
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 
 proxies:
-  - {"name":"jp.binxinlei.link","type":"vless","server":"146.56.40.191","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"jp.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"hk.binxinlei.link","type":"vless","server":"165.154.132.204","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"hk.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"sg.binxinlei.link","type":"vless","server":"8.217.35.66","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"sg.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"sk.binxinlei.link","type":"vless","server":"130.162.154.209","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"sk.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sk.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"kr.binxinlei.link","type":"vless","server":"129.154.194.61","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"kr1.binxinlei.link","type":"vless","server":"146.56.157.137","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr1.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr1.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"tw.binxinlei.link","type":"vless","server":"220.130.80.179","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tw.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tw.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"tr.binxinlei.link","type":"vless","server":"91.151.89.81","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"tr.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"tr.binxinlei.link"}},"client-fingerprint":"randomized"}
-  - {"name":"glitch.com","type":"vless","server":"mirage-nostalgic-fireplant.glitch.me","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"mirage-nostalgic-fireplant.glitch.me","network":"ws","ws-opts":{"path":"/","headers":{"host":"mirage-nostalgic-fireplant.glitch.me"}},"client-fingerprint":"randomized"}
-  - {"name":"kr2.binxinlei.pp.ua","type":"vless","server":"64.110.89.50","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr2.binxinlei.pp.ua","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr2.binxinlei.pp.ua"}},"client-fingerprint":"randomized"}
-  - {"name":"kr3.binxinlei.pp.ua","type":"vless","server":"131.186.25.177","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"kr3.binxinlei.pp.ua","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"kr3.binxinlei.pp.ua"}},"client-fingerprint":"randomized"}
+  - {"name":"jp.binxinlei.link","type":"vless","server":"1.binxinlei.eu.org","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"jp.binxinlei.link","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.link"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -40,16 +94,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - jp.binxinlei.link
-      - hk.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
-      - kr1.binxinlei.link
-      - tw.binxinlei.link
-      - tr.binxinlei.link
-      - glitch.com
-      - kr2.binxinlei.pp.ua
-      - kr3.binxinlei.pp.ua
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -57,16 +101,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - jp.binxinlei.link
-      - hk.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
-      - kr1.binxinlei.link
-      - tw.binxinlei.link
-      - tr.binxinlei.link
-      - glitch.com
-      - kr2.binxinlei.pp.ua
-      - kr3.binxinlei.pp.ua
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -74,64 +108,24 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - jp.binxinlei.link
-      - hk.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
-      - kr1.binxinlei.link
-      - tw.binxinlei.link
-      - tr.binxinlei.link
-      - glitch.com
-      - kr2.binxinlei.pp.ua
-      - kr3.binxinlei.pp.ua
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - jp.binxinlei.link
-      - hk.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
-      - kr1.binxinlei.link
-      - tw.binxinlei.link
-      - tr.binxinlei.link
-      - glitch.com
-      - kr2.binxinlei.pp.ua
-      - kr3.binxinlei.pp.ua
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - jp.binxinlei.link
-      - hk.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
-      - kr1.binxinlei.link
-      - tw.binxinlei.link
-      - tr.binxinlei.link
-      - glitch.com
-      - kr2.binxinlei.pp.ua
-      - kr3.binxinlei.pp.ua
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - jp.binxinlei.link
-      - hk.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
-      - kr1.binxinlei.link
-      - tw.binxinlei.link
-      - tr.binxinlei.link
-      - glitch.com
-      - kr2.binxinlei.pp.ua
-      - kr3.binxinlei.pp.ua
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -155,16 +149,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - jp.binxinlei.link
-      - hk.binxinlei.link
-      - sg.binxinlei.link
-      - sk.binxinlei.link
-      - kr.binxinlei.link
-      - kr1.binxinlei.link
-      - tw.binxinlei.link
-      - tr.binxinlei.link
-      - glitch.com
-      - kr2.binxinlei.pp.ua
-      - kr3.binxinlei.pp.ua
 
 rules:
 # 本地/局域网地址
