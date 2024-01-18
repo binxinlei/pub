@@ -1,3 +1,7 @@
+#!MANAGED-CONFIG https://rss2024.mugua-sub.com/link/Fjy3iuwpfh0PuhFK?clash=1&dns=0
+#---------------------------------------------------#
+## 上次更新于：2024-01-16 03:24:59
+#---------------------------------------------------#
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
 allow-lan: true
@@ -7,10 +11,10 @@ external-controller: 0.0.0.0:9090
 secret: ''
 
 proxies:
-  - {"name":"jp.binxinlei.workers.dev\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"jp.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
-  - {"name":"hk.binxinlei.workers.dev\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"hk.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
-  - {"name":"sg.binxinlei.workers.dev\r","type":"vless","server":"4.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
-  - {"name":"sg.binxinlei.workers.dev-clone\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"jp\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"jp.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"hk\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"hk.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"sg-2\r","type":"vless","server":"4.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"sg-1\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
   - {"name":"香港 - 1X  - A","type":"vmess","server":"A001.STANDARD-NODES-CHICKENFARMS.TOP","port":18691,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"香港 - 1X  - B","type":"vmess","server":"A002.STANDARD-NODES-CHICKENFARMS.TOP","port":18692,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"东京 - 1X  - A","type":"vmess","server":"A003.STANDARD-NODES-CHICKENFARMS.TOP","port":18693,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
@@ -31,10 +35,10 @@ proxy-groups:
     type: select
     proxies:
       - ⭐️ Auto
-      - "jp.binxinlei.workers.dev\r"
-      - "hk.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev-clone\r"
+      - "jp\r"
+      - "hk\r"
+      - "sg-2\r"
+      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -59,10 +63,10 @@ proxy-groups:
     type: select
     proxies:
       - 🍃 Proxies
-      - "jp.binxinlei.workers.dev\r"
-      - "hk.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev-clone\r"
+      - "jp\r"
+      - "hk\r"
+      - "sg-2\r"
+      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -82,10 +86,10 @@ proxy-groups:
     type: select
     proxies:
       - 🍃 Proxies
-      - "jp.binxinlei.workers.dev\r"
-      - "hk.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev-clone\r"
+      - "jp\r"
+      - "hk\r"
+      - "sg-2\r"
+      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -105,10 +109,10 @@ proxy-groups:
     type: select
     proxies:
       - 🍃 Proxies
-      - "jp.binxinlei.workers.dev\r"
-      - "hk.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev-clone\r"
+      - "jp\r"
+      - "hk\r"
+      - "sg-2\r"
+      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -129,10 +133,10 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🍃 Proxies
-      - "jp.binxinlei.workers.dev\r"
-      - "hk.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev-clone\r"
+      - "jp\r"
+      - "hk\r"
+      - "sg-2\r"
+      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -153,10 +157,10 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🍃 Proxies
-      - "jp.binxinlei.workers.dev\r"
-      - "hk.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev-clone\r"
+      - "jp\r"
+      - "hk\r"
+      - "sg-2\r"
+      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -177,10 +181,10 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🍃 Proxies
-      - "jp.binxinlei.workers.dev\r"
-      - "hk.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev\r"
-      - "sg.binxinlei.workers.dev-clone\r"
+      - "jp\r"
+      - "hk\r"
+      - "sg-2\r"
+      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
