@@ -1,10 +1,10 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-01-18 12:38:29
+# 创建时间：2024-01-18 14:29:09
 # 使用模版：ACL4SSR.ini
 # 节点数量：19
-# 节点类型：vless, vmess
+# 节点类型：vmess, vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
 mixed-port: 7890
@@ -87,10 +87,6 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"jp\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"jp.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
-  - {"name":"hk\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"hk.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
-  - {"name":"sg-1\r","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
-  - {"name":"sg-2\r","type":"vless","server":"2.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
   - {"name":"香港 - 1X  - A","type":"vmess","server":"A001.STANDARD-NODES-CHICKENFARMS.TOP","port":18691,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"香港 - 1X  - B","type":"vmess","server":"A002.STANDARD-NODES-CHICKENFARMS.TOP","port":18692,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"东京 - 1X  - A","type":"vmess","server":"A003.STANDARD-NODES-CHICKENFARMS.TOP","port":18693,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
@@ -106,16 +102,16 @@ proxies:
   - {"name":"新加坡 - TLS加密 - 1X","type":"vmess","server":"A015.STANDARD-NODES-CHICKENFARMS.TOP","port":443,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":""}}
   - {"name":"首尔 - TLS加密 - 1X","type":"vmess","server":"A017.STANDARD-NODES-CHICKENFARMS.TOP","port":443,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":""}}
   - {"name":"洛杉矶 - TLS加密 - 1X","type":"vmess","server":"A019.STANDARD-NODES-CHICKENFARMS.TOP","port":443,"cipher":"auto","uuid":"66f19003-9bb3-4892-a15c-61b9bac95bcb","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":""}}
+  - {"name":"jp","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"jp.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"hk","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"hk.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"sg-1","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"sg-2","type":"vless","server":"2.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - "jp\r"
-      - "hk\r"
-      - "sg-2\r"
-      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -131,16 +127,16 @@ proxy-groups:
       - 新加坡 - TLS加密 - 1X
       - 首尔 - TLS加密 - 1X
       - 洛杉矶 - TLS加密 - 1X
+      - jp
+      - hk
+      - sg-1
+      - sg-2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - "jp\r"
-      - "hk\r"
-      - "sg-2\r"
-      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -156,16 +152,16 @@ proxy-groups:
       - 新加坡 - TLS加密 - 1X
       - 首尔 - TLS加密 - 1X
       - 洛杉矶 - TLS加密 - 1X
+      - jp
+      - hk
+      - sg-1
+      - sg-2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "jp\r"
-      - "hk\r"
-      - "sg-2\r"
-      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -181,15 +177,15 @@ proxy-groups:
       - 新加坡 - TLS加密 - 1X
       - 首尔 - TLS加密 - 1X
       - 洛杉矶 - TLS加密 - 1X
+      - jp
+      - hk
+      - sg-1
+      - sg-2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "jp\r"
-      - "hk\r"
-      - "sg-2\r"
-      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -205,15 +201,15 @@ proxy-groups:
       - 新加坡 - TLS加密 - 1X
       - 首尔 - TLS加密 - 1X
       - 洛杉矶 - TLS加密 - 1X
+      - jp
+      - hk
+      - sg-1
+      - sg-2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - "jp\r"
-      - "hk\r"
-      - "sg-2\r"
-      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -229,15 +225,15 @@ proxy-groups:
       - 新加坡 - TLS加密 - 1X
       - 首尔 - TLS加密 - 1X
       - 洛杉矶 - TLS加密 - 1X
+      - jp
+      - hk
+      - sg-1
+      - sg-2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - "jp\r"
-      - "hk\r"
-      - "sg-2\r"
-      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -253,6 +249,10 @@ proxy-groups:
       - 新加坡 - TLS加密 - 1X
       - 首尔 - TLS加密 - 1X
       - 洛杉矶 - TLS加密 - 1X
+      - jp
+      - hk
+      - sg-1
+      - sg-2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -275,10 +275,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "jp\r"
-      - "hk\r"
-      - "sg-2\r"
-      - "sg-1\r"
       - 香港 - 1X  - A
       - 香港 - 1X  - B
       - 东京 - 1X  - A
@@ -294,6 +290,10 @@ proxy-groups:
       - 新加坡 - TLS加密 - 1X
       - 首尔 - TLS加密 - 1X
       - 洛杉矶 - TLS加密 - 1X
+      - jp
+      - hk
+      - sg-1
+      - sg-2
 
 rules:
 # 本地/局域网地址
