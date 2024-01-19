@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-01-18 16:18:46
+# 创建时间：2024-01-19 10:16:51
 # 使用模版：youtube
-# 节点数量：19
+# 节点数量：21
 # 节点类型：vmess, vless
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
@@ -34,6 +34,8 @@ proxies:
   - {"name":"hk","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"hk.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
   - {"name":"sg-1","type":"vless","server":"1.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
   - {"name":"sg-2","type":"vless","server":"2.binxinlei.eu.org","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"sg.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"sg.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"US-JP","type":"vless","server":"acus.cloudflarest.link","port":80,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"us.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"us.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
+  - {"name":"US-US","type":"vless","server":"acus.cloudflarest.link","port":80,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"us1.binxinlei.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"us1.binxinlei.workers.dev"}},"client-fingerprint":"randomized"}
 proxy-groups:
   - name: 🍃 Proxies
     type: select
@@ -58,6 +60,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
   - name: 🍂 Domestic
     type: select
     proxies:
@@ -86,6 +90,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
   - name: 👹 YouTube
     type: select
     proxies:
@@ -109,6 +115,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
   - name: 🍿 Netflix
     type: select
     proxies:
@@ -132,6 +140,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
   - name: 💳 PayPal
     type: select
     proxies:
@@ -156,6 +166,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
   - name: 👔 LinkedIn
     type: select
     proxies:
@@ -180,6 +192,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
   - name: 🍎 Apple Service
     type: select
     proxies:
@@ -204,6 +218,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
   - name: ☁️ Others
     type: select
     proxies:
@@ -232,6 +248,8 @@ proxy-groups:
       - hk
       - sg-1
       - sg-2
+      - US-JP
+      - US-US
 
 rules:
 # 长风网站，自动注入
