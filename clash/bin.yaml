@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-04-21 08:53:09
+# 创建时间：2024-04-21 22:38:40
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：8
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -92,9 +92,8 @@ proxies:
   - {"name":"KR_1","type":"vless","server":"130.162.140.215","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.kr.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
   - {"name":"KR_2","type":"vless","server":"132.145.95.170","port":39637,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.kr.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
   - {"name":"JP_1","type":"vless","server":"47.245.54.58","port":8880,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"JP_2","type":"vless","server":"47.245.7.212","port":8880,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"JP_3","type":"vless","server":"47.74.4.47","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
-  - {"name":"HK","type":"vless","server":"8.217.239.116","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.aliyun.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
+  - {"name":"JP_2","type":"vless","server":"47.74.4.47","port":2096,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
+  - {"name":"HK","type":"vless","server":"8.218.18.132","port":8080,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.aliyun.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -108,7 +107,6 @@ proxy-groups:
       - KR_2
       - JP_1
       - JP_2
-      - JP_3
       - HK
   - name: ♻️ 自动选择
     type: url-test
@@ -123,7 +121,6 @@ proxy-groups:
       - KR_2
       - JP_1
       - JP_2
-      - JP_3
       - HK
   - name: 🌍 国外媒体
     type: select
@@ -138,7 +135,6 @@ proxy-groups:
       - KR_2
       - JP_1
       - JP_2
-      - JP_3
       - HK
   - name: 📲 电报信息
     type: select
@@ -152,7 +148,6 @@ proxy-groups:
       - KR_2
       - JP_1
       - JP_2
-      - JP_3
       - HK
   - name: Ⓜ️ 微软服务
     type: select
@@ -166,7 +161,6 @@ proxy-groups:
       - KR_2
       - JP_1
       - JP_2
-      - JP_3
       - HK
   - name: 🍎 苹果服务
     type: select
@@ -180,7 +174,6 @@ proxy-groups:
       - KR_2
       - JP_1
       - JP_2
-      - JP_3
       - HK
   - name: 🎯 全球直连
     type: select
@@ -211,7 +204,6 @@ proxy-groups:
       - KR_2
       - JP_1
       - JP_2
-      - JP_3
       - HK
 
 rules:
