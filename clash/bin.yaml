@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2024-04-24 01:14:48
+# 创建时间：2024-04-26 01:13:53
 # 使用模版：ACL4SSR.ini
-# 节点数量：11
+# 节点数量：8
 # 节点类型：vless
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 ####################################
@@ -87,116 +87,95 @@ dns:
       - 0.0.0.0/32
 
 proxies:
-  - {"name":"HK_1","type":"vless","server":"8.218.18.132","port":8080,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.aliyun.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"HK_2","type":"vless","server":"104.17.171.111","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
-  - {"name":"JP_1","type":"vless","server":"47.245.54.58","port":8880,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"JP_2","type":"vless","server":"47.245.12.38","port":80,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"JP_3","type":"vless","server":"47.245.56.50","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"JP_4","type":"vless","server":"47.91.3.112","port":2052,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.jp.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
+  - {"name":"US","type":"vless","server":"34.110.227.66","port":80,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.us.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
   - {"name":"KR_1","type":"vless","server":"132.145.95.170","port":39637,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.kr.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
   - {"name":"KR_2","type":"vless","server":"64.110.88.200","port":8443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.kr.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"SG_1","type":"vless","server":"138.2.76.91","port":2082,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.sg.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"SG_2","type":"vless","server":"152.69.215.14","port":2082,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.sg.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
-  - {"name":"US","type":"vless","server":"34.110.227.66","port":80,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":false,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.us.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}}}
+  - {"name":"KR_3","type":"vless","server":"222.101.103.116","port":15123,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.kr.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
+  - {"name":"KR_4","type":"vless","server":"152.70.234.249","port":21847,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.kr.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
+  - {"name":"HK","type":"vless","server":"104.17.171.111","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
+  - {"name":"CMCC","type":"vless","server":"104.16.42.222","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.oracle.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
+  - {"name":"优选节点","type":"vless","server":"cf.090227.xyz","port":443,"uuid":"8c210b5a-71af-4bd9-950c-690def0b59d4","tls":true,"servername":"notls.bxl.pp.ua","network":"ws","ws-opts":{"path":"/proxyIP=proxyip.us.fxxk.dedyn.io","headers":{"host":"notls.bxl.pp.ua"}},"client-fingerprint":"random"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HK_1
-      - HK_2
-      - JP_1
-      - JP_2
-      - JP_3
-      - JP_4
+      - US
       - KR_1
       - KR_2
-      - SG_1
-      - SG_2
-      - US
+      - KR_3
+      - KR_4
+      - HK
+      - CMCC
+      - 优选节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - HK_1
-      - HK_2
-      - JP_1
-      - JP_2
-      - JP_3
-      - JP_4
+      - US
       - KR_1
       - KR_2
-      - SG_1
-      - SG_2
-      - US
+      - KR_3
+      - KR_4
+      - HK
+      - CMCC
+      - 优选节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - HK_1
-      - HK_2
-      - JP_1
-      - JP_2
-      - JP_3
-      - JP_4
+      - US
       - KR_1
       - KR_2
-      - SG_1
-      - SG_2
-      - US
+      - KR_3
+      - KR_4
+      - HK
+      - CMCC
+      - 优选节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK_1
-      - HK_2
-      - JP_1
-      - JP_2
-      - JP_3
-      - JP_4
+      - US
       - KR_1
       - KR_2
-      - SG_1
-      - SG_2
-      - US
+      - KR_3
+      - KR_4
+      - HK
+      - CMCC
+      - 优选节点
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - HK_1
-      - HK_2
-      - JP_1
-      - JP_2
-      - JP_3
-      - JP_4
+      - US
       - KR_1
       - KR_2
-      - SG_1
-      - SG_2
-      - US
+      - KR_3
+      - KR_4
+      - HK
+      - CMCC
+      - 优选节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - HK_1
-      - HK_2
-      - JP_1
-      - JP_2
-      - JP_3
-      - JP_4
+      - US
       - KR_1
       - KR_2
-      - SG_1
-      - SG_2
-      - US
+      - KR_3
+      - KR_4
+      - HK
+      - CMCC
+      - 优选节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -219,17 +198,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_1
-      - HK_2
-      - JP_1
-      - JP_2
-      - JP_3
-      - JP_4
+      - US
       - KR_1
       - KR_2
-      - SG_1
-      - SG_2
-      - US
+      - KR_3
+      - KR_4
+      - HK
+      - CMCC
+      - 优选节点
 
 rules:
 # 本地/局域网地址
